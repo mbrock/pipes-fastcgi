@@ -1,0 +1,26 @@
+name:                pipes-fastcgi
+version:             0.1.0
+synopsis:            FastCGI for the pipes ecosystem
+-- description:         
+license:             BSD3
+license-file:        LICENSE
+author:              Mikael Brockman
+maintainer:          mbrock@goula.sh
+-- copyright:           
+category:            Pipes
+build-type:          Simple
+-- extra-source-files:  
+cabal-version:       >=1.10
+
+library
+  exposed-modules:     Pipes.FastCGI
+  -- other-modules:       
+  -- other-extensions:    
+  build-depends:       base >=4.5 && <4.6,
+                       bytestring >= 0.9 && < 1,
+                       text == 0.11.*,
+                       direct-fastcgi == 2.*,
+                       pipes-safe == 2.*,
+                       pipes == 4.*
+  -- hs-source-dirs:      
+  default-language:    Haskell2010
